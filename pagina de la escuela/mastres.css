@@ -1,0 +1,19 @@
+body{
+    background-color: #F6F6F6;
+
+}
+
+img{
+    position: absolute;
+    top: 27%;
+    left: 38%;
+    animation: centro 1s linear;
+}
+@keyframes centro {
+    0% {
+        left: 0;
+      }
+      100% {
+        left: 38%;
+      }
+}

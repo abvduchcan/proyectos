@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+<head>
+	<meta charset="UTF-8">
+	<title> PRE_EXAMEN</title>
+	<link rel="stylesheet" href="diseño.css">
+</head>
+
+<body>
+	<audio id="miAudio" controls autoplay loop class="audio" v>
+		<source src="fondo.mp3" type="audio/mpeg">
+		<script>
+			var miAudio = document.getElementById("miAudio");
+			miAudio.volume = 0.05;  
+		  </script>
+		Tu navegador no soporta el elemento de audio.
+	</audio>
+	<div >
+		<section>
+			<table class="algo">
+				<tr>
+					<td>
+						<form name="formulario" method="post" action="procesar.php" title="PRE_examen">
+							<p>
+								<label for="fecha">FECHA: </label>
+								<input for="fecha" type="date" name="fecha" required>
+							</p>
+							<p>
+								<label for="nombres">NOMBRE(s):</label>
+								<input for="nombres" type="text" name="nombre" minlegth="3" maxlength="40" placeholder="Ej. mariana" autocomplete="on" required>
+								<label for="apellidos">APELLIDOS: </label>
+								<input for="apellidos" type="text" name="nombre2" minlegth="3" maxlength="40" placeholder="Ej. ramirez" autocomplete="on" required>
+							</p>
+							<p>
+								<label for="edad">EDAD: </label>
+								<input for="edad" type="number" name="edad" placeholder="Mayor de 18" required>
+								<label for="correo">CORREO: </label>
+								<input for="correo" type="email" name="correo" placeholder="Ejemplo@gmail.com" pattern="[a-z@.]+" autocomplete="on" required>
+							</p>
+							<datalist id="datos">
+								<option value="477 555 5555" label="Papu"></option>
+								<option value="477 385 3369" label="Kashasha"></option>
+								<option value="477 296 5546" label="El del pan"></option>
+								<option value="477 666 7894" label="Autolavado El Gallito Feliz"></option>
+							</datalist>
+							<p>
+								<label for="telefono">NUMERO DE TELEFONO: </label>
+								<input for="telefono" type="tel" name="telefono" list="datos" placeholder="477 xxx xxxx" required>
+							</p>
+							<p>
+								<label for="calle">CALLE Y NUMERO: </label>
+								<input for="calle" type="text" name="" placeholder="Ej. santa rebeca #303-A" required>
+								<label for="colonia">COLONIA: </label>
+								<input for="colonia" type="text" name="" placeholder="Ej. los olivos" required>
+								<label for="cp">CODIGO POSTAL: </label>
+								<input for="cp" type="text" pattern="[0-9]{1,5}" name="cp" placeholder="Ejemplo: 37410" required>
+							</p>
+							<label><p>ESTADO DE ORIGEN:</p></label>
+							<select id="ciudades" name="ciudad" required class="selector">
+								<option value="1">Aguascalientes</option>
+								<option value="2">Baja California</option>
+								<option value="3">Baja California Sur</option>
+								<option value="4">Campeche</option>
+								<option value="5">Chiapas</option>
+								<option value="6">Chihuahua</option>
+								<option value="7">Coahuila de Zaragoza</option>
+								<option value="8">Colima</option>
+								<option value="9">Durango</option>
+								<option value="10">Estado de Mexico</option>
+								<option value="11">Guanajuato</option>
+								<option value="12">Guerrero</option>
+								<option value="14">Jalisco</option>
+								<option value="15">Michoacan de Ocampo</option>
+								<option value="16">Morelos</option>
+								<option value="17">Nayarit</option>
+								<option value="18">Nuevo Leon</option>
+								<option value="19">Oaxaca</option>
+								<option value="20">Puebla</option>
+								<option value="21">Queretaro</option>
+								<option value="22">Quintana Roo</option>
+								<option value="23">San Luis Potosi</option>
+								<option value="24">Sinaloa</option>
+								<option value="25">Sonora</option>
+								<option value="27">Tamaulipas</option>
+								<option value="28">Tlaxcala</option>
+								<option value="29">Veracruz de Ignacio de la Llave</option>
+								<option value="30">Yucatan</option>
+								<option value="31">Zacatecas</option>
+								<option value="32">Ciudad de Mexico</option>
+							</select>
+							<label><p>COLOR FAVORITO:<br>
+								<input type="color" name="color" required>
+							</p></label>
+							<label><p>COMENTARIOS:</p></label>
+							<textarea id="usercomment" name="comentarios"
+								placeholder="DEJA UN COMENTARIO PARA MEJORAR NUESTRA PAGINA" required></textarea>
+							<p class="boton"><input type="submit" value="enviar"></p>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+
+	
+</body>
+
+</html>

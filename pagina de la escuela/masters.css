@@ -1,0 +1,33 @@
+body{
+    background-color: #F6F6F6;
+    background-image: url(papelcarta.avif);
+    background-repeat: no-repeat;
+    background-size: 67%;
+    background-position-y: -137px;
+    background-position-x: 262px;
+
+}
+
+.clasesita{
+    top: 18%;
+    left: 34%;
+    font-size: 23px;
+    position: absolute;
+}
+
+.imagen{
+    width: 275px;
+    height: 275px;
+    animation: machin 3s linear;
+}
+
+@keyframes machin {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+

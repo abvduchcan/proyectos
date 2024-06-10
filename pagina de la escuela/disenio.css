@@ -1,0 +1,53 @@
+p{
+    margin-top: 5.8%;
+    margin-left: 40px;
+}
+input{
+    
+    margin-right: 10px;
+}
+label{
+    color: rgb(255, 255, 255);
+}
+.algo{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    background-color: black;
+    opacity: 70%;
+    border-radius: 2%;
+    max-width: 55%; 
+    max-height: 50%;
+    min-width: 55%; 
+    min-height: 50%;  
+   
+}
+body{
+    background-image: url(paisaje5.GIF);
+    background-color: #2B2B3D; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 75%;
+}
+.audio{
+    position: absolute;
+    height: 10x;
+    opacity: 0%;
+}
+textarea{
+    position: absolute;
+    margin-left: -13.65%;
+    max-width: 30%; 
+    max-height: 13%;
+    min-width: 30%; 
+    min-height: 13%;  
+    resize: both;
+    width: 30%;
+    height: 13%;
+}
+.boton{
+    margin-top: 15%;
+}
+.selector{
+    margin-left: 4%;
+}
